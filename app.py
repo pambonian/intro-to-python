@@ -282,20 +282,33 @@ def move(reply1, reply2):
 move("All good in the hood", "Benjamin")
 
 def get_cities(students):
-    # return a [list] of all cities from the students list
-    # TODO make an empty list
-    # TODO iterate through the list of students
-    # TODO append each city in the dict to the empty list
-    #  TODO return the list
+    '''Return a [list] of all cities from the students list'''
+    # TODO Make a empty list
+    # TODO Iterate through the list of student
+    # TODO Append each city in the dict to the empty list
+    # TODO return the list
 
     result = []
 
     for s in students:
-        print(s)
         if s.get('city'):
-            print(s.get('city'))
             result.append(s.get('city'))
 
     return result
 
-print('Cities list: ', get_cities(students)
+print('Cities list: ', get_cities(students))
+
+def get_names(students):
+    '''return list of cities from the students list'''
+    result = []
+    
+    for student in students:
+        if student.get("name"):
+            result.append(student.get("name"))
+        else:  
+            return ('error')
+    
+    return(result)
+
+
+print('name_list', get_names(students))
