@@ -281,3 +281,21 @@ def move(reply1, reply2):
 
 move("All good in the hood", "Benjamin")
 
+def get_cities(students):
+    # return a [list] of all cities from the students list
+    # TODO make an empty list
+    # TODO iterate through the list of students
+    # TODO append each city in the dict to the empty list
+    #  TODO return the list
+
+    result = []
+
+    for s in students:
+        print(s)
+        if s.get('city'):
+            print(s.get('city'))
+            result.append(s.get('city'))
+            
+    return result
+
+get_cities(students)
