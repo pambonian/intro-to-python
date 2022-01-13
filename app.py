@@ -295,7 +295,7 @@ def get_cities(students):
         if s.get('city'):
             print(s.get('city'))
             result.append(s.get('city'))
-            
+
     return result
 
-get_cities(students)
+print('Cities list: ', get_cities(students)
