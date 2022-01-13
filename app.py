@@ -275,3 +275,13 @@ def move(name, city="Seattle", state="Washington"):
 move("Charlie", "Los Angeles", "California")
 move(city="San Francisco", name="Mark", state="California")
 move("John", state="New York", city="New York")
+
+def move(reply1, reply2):
+    print(f'{reply1} my friend {reply2}')
+
+move("All good in the hood", "Benjamin")
+
+def say_bye(name1, name2):
+    print(f'{name1} said hi to {name2}')
+
+say_bye("justin", "john")
