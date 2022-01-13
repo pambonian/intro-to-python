@@ -214,18 +214,42 @@ for i in range(len(nums)):
             print('Hi I am 750')
 
 students = [
-    {
+    { 
         "name": "Kimmie",
         "city": "Atlanta"
     },
-    {
+    { 
         "name": "Chris",
         "city": "Salt Lake City"
     },
-    {
+    { 
         "name": "Zack",
         "city": "Los Angeles"
-    }
+    },
+     { 
+        "name": "John",
+        "city": "Atlanta"
+    },
+    { 
+        "name": "Jane",
+        "city": "New York"
+    },
+    { 
+        "name": "Rob",
+        "city": "Los Angeles"
+    },
+     { 
+        "name": "Harper",
+        "city": "Washington"
+    },
+    { 
+        "name": "Mike",
+        "city": "Seattle"
+    },
+    { 
+        "name": "Set",
+        "city": "San Francisco"
+    },
 ]
 
 for i in range(len(students)):
@@ -298,6 +322,7 @@ def get_cities(students):
 
 print('Cities list: ', get_cities(students))
 
+
 def get_names(students):
     '''return list of cities from the students list'''
     result = []
@@ -312,3 +337,34 @@ def get_names(students):
 
 
 print('name_list', get_names(students))
+
+def parse_by_cities(students):
+    # return a dict that has a key for each city and a list of students for each city
+    #  TODO make an empty dict
+    #  TODO iterate through the list of students and perform logic
+        #  logic -> if city is not in dict
+            #  add the city and set that to an empty list
+        #  logic -> if the city is in the dict
+            #  append student name to list
+    # TODO return the dict
+
+    result = {}
+
+    for student in students:
+        print('Print INSIDE', student)
+        if student.get('city'):
+            if not result.get(student.get('city')):
+                print('Does not exist')
+                result[student.get('city')] = []
+                city_list = result[student.get('city')]
+                city_list.append(student.get('name'))
+            else:
+                print('Does exist')
+                city_list = result[student.get('city')]
+                city_list.append(student.get('name'))
+
+    print('-------space---------')
+
+    return result
+
+print('Printing OUTSIDE', parse_by_cities(students))
