@@ -126,10 +126,11 @@ print(sentence.index(lastChar))
 #   console.log('younger than 30');
 # }
 
-age = 30
-if (age > 30):
+age = 31
+if age > 30:
     print('older than 30')
-elif print('younger than 30')
+else:
+    print('younger than 30')
 
 # // 6
 # let str = 'pizza'; // try different strings here
@@ -142,6 +143,14 @@ elif print('younger than 30')
 #   console.log('starts with p');
 # }
 
+str = 'pizza'
+if len(str) > 10:
+    print('long string')
+else:
+    print('short string')
+if str[0] == 'p':
+    print('starts with p')
+
 # // 7
 # let num = 15; // try different numbers here
 # if (num % 3 === 0) {
@@ -149,6 +158,12 @@ elif print('younger than 30')
 # } else if (num % 5 === 0) {
 #   console.log('divisible by 5');
 # }
+
+num = 15
+if num % 3 == 0:
+    print('divisible by 3')
+elif num % 5 == 0:
+    print('divisible by 5')
 
 # // 8
 # let num = 15; // try different numbers here
@@ -159,6 +174,12 @@ elif print('younger than 30')
 #   console.log('divisible by 5');
 # }
 
+num = 15
+if num % 3 == 0:
+    print('divisible by 3')
+if num % 5 == 0:
+    print('divisible by 5')
+
 # // 9
 # let str = 'General Assembly'; // try different strings here
 # if (str[0] === str[0].toUpperCase()) {
@@ -167,6 +188,12 @@ elif print('younger than 30')
 # if (str[str.length - 1] === str[str.length - 1].toUpperCase()) {
 #   console.log('ends with a capital!');
 # }
+
+str = 'General Assembly'
+if str[0] == str[0].upper():
+    print('starts with a capital')
+if str[len(str) - 1] == str[len(str) - 1].upper():
+    print('ends with a capital')
 
 # // 10
 # let num = -44; // try different numbers here
@@ -182,6 +209,18 @@ elif print('younger than 30')
 # } else {
 #   console.log('odd');
 # }
+
+num = -44
+if num > 0:
+    print('positive')
+elif num < 0:
+    print('negative')
+else:
+    print(0)
+if num % 2 == 0:
+    print('even')
+else:
+    print('odd')
 
 # TASK FOUR
 
