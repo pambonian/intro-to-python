@@ -99,6 +99,12 @@ print(not isEven)
 # let char = str2[num].toLowerCase(); // ?
 # console.log(char + '!'); // ?
 
+str1 = 'marker'
+num = len('whiteboard') - len(str1)
+print(num)
+str2 = 'bootcamp'
+print(str2[num].upper())
+
 # // 4
 # let sentence = 'welcome to bootcamp prep';
 # let lastChar = sentence[sentence.length - 1];
