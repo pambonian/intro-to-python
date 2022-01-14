@@ -229,12 +229,22 @@ else:
 #   console.log('if');
 # }
 
+num = 11
+if num > 5:
+    print('if')
+
 # let num = 5; // feel free to change the value of this variable
 # if (num > 5) {
 #   console.log('if');
 # } else {
 #   console.log('else');
 # }
+
+num = 2
+if num > 5:
+    print('if')
+else:
+    print('else')
 
 # let num = 0; // feel free to change the value of this variable
 # if (num < 0) {
@@ -245,6 +255,14 @@ else:
 #   console.log('else');
 # }
 
+num = 0
+if num < 0:
+    print('if')
+elif num > 0:
+    print('else if')
+else:
+    print('else')
+
 # TASK FIVE
 
 # function sayHello(name) {
@@ -253,6 +271,10 @@ else:
 #   }
 #   console.log(sayHello('bootcamp prep')); // feel free to change the string being passed
 
+def say_hello(name):
+    msg = 'Hello, ' + name + '. How are you?'
+    return msg
+print(say_hello('patrick!'))
 
 # function checkNumber(num) {
 #     if (num > 0) {
@@ -265,6 +287,17 @@ else:
 #   }
 #   console.log(checkNumber(5)); // feel free to change the number being passed
 
+def check_number(num):
+    if num > 0:
+        return 'positive'
+    elif num < 0:
+        return 'negative'
+    else:
+        return 'zero'
+print(check_number(5))
+print(check_number(0))
+print(check_number(-5))
+
 #   function fizzBuzz1(max) {
 #     for (let i = 0; i < max; i += 1) {
   
@@ -275,6 +308,14 @@ else:
 #       }
 #     }
 #   }
+
+def fizz_buzz_1(max):
+    for i in range(max):
+        if i % 3 == 0 and i % 5 != 0:
+            print(i)
+        elif i % 5 == 0 and i % 3 != 0:
+            print(i)
+print(fizz_buzz_1(100))
 
 #   function evenCaps(sentence) {
 #     let newSentence = "";
@@ -292,3 +333,16 @@ else:
   
 #     return newSentence;
 #   }
+
+def even_caps(sentence):
+    new_sentence = ''
+    for i in range (len(sentence)):
+        char = sentence[i]
+
+        if i % 2 == 0:
+            capital_char = char.upper()
+            new_sentence += capital_char
+        else:
+            new_sentence += char
+    return new_sentence
+print(even_caps('i gave a popsicle to my friend carl during the summer heat wave'))
