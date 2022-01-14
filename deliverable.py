@@ -63,7 +63,7 @@ print("engineering".index("neer"))
 # 'engineering'.indexOf('r') > -1
 print(("engineering".index("r")) > 1)
 # 'science'.indexOf('x') === -1
-print("science".index("x") == 1)
+print("science".index("s") == 1)
 
 #  TASK TWO
 
@@ -74,11 +74,18 @@ print("science".index("x") == 1)
 # idx * 2;
 # console.log(idx); // ?
 
+idx = 'abcde'.index('d')
+idx = idx + 11
+print('hello', idx)
+print(idx * 2)
+
 # // 2
 # let num = 33;
 # let isEven = num % 2 === 0;
 # console.log(isEven); // ?
 # console.log(!isEven); // ?
+
+
 
 # // 3
 # let str1 = 'marker';
