@@ -126,6 +126,11 @@ print(sentence.index(lastChar))
 #   console.log('younger than 30');
 # }
 
+age = 30
+if (age > 30):
+    print('older than 30')
+elif print('younger than 30')
+
 # // 6
 # let str = 'pizza'; // try different strings here
 # if (str.length > 10) {
