@@ -111,6 +111,11 @@ print(str2[num].upper())
 # console.log(lastChar); // ?
 # console.log(sentence.indexOf(lastChar)); // ?
 
+sentence = 'welcome to bootcamp prep'
+lastChar = sentence[len(sentence) - 1]
+print(lastChar)
+print(sentence.index(lastChar))
+
 # TASK THREE
 
 # // 5
