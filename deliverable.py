@@ -85,7 +85,10 @@ print(idx * 2)
 # console.log(isEven); // ?
 # console.log(!isEven); // ?
 
-
+num = 33
+isEven = num % 2 == 0
+print(isEven)
+print(not isEven)
 
 # // 3
 # let str1 = 'marker';
