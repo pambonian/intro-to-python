@@ -1,15 +1,16 @@
 numbers = [1, 2, 3, 4]
-def addition(num):
+def double_num(num):
     return num + num
 
-result = map(addition, numbers)
-# print(result)
+result = map(double_num, numbers)
+print('before', result)
+print('after making it a list', list(result))
 
 result2 = map(lambda x: x + x, numbers)
-# print(list(result2))
+print('result 2 -> list', list(result2))
 
 result3 = map(lambda y: y * y, numbers)
-# print(list(result3))
+print('result 3 -> list', list(result3))
 
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
