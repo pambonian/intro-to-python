@@ -3,13 +3,12 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
-
+# boolean
 print(is_prime(2))
 print(is_prime(10))
 print(is_prime(11))
 print(is_prime(9))
 print(is_prime(2017))
-
 
 def first_n_primes(n):
     primes = []
@@ -20,12 +19,11 @@ def first_n_primes(n):
             primes.append(num)
         num += 1
     return primes
-
+# printing
 print(first_n_primes(0))
 print(first_n_primes(1))
 print(first_n_primes(4))
-
-
+# return sum of n of primes
 def sum_of_n_primes(n):
     sum = 0
     primes = first_n_primes(n)
